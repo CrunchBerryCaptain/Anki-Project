@@ -30,7 +30,7 @@ As mentioned above, the PAT required for the script to work is not in the repo. 
 
 <ol>
   <li>Open the anki.py file</li>
-  <li>Replace the <em>token = os.getenv("token")</em> with <em>token = {YOUR TOKEN STRING}</em> .</li>
+  <li>Replace the line <em>token = os.getenv("token")</em> with <em>token = {YOUR TOKEN STRING}</em> .</li>
   <li>Get rid of the _load_dotenv()_ line and the import - you don't need that (I do, because I am the one publishing this repo).</li>
   <li>Run the file script</li> 
 </ol> 
