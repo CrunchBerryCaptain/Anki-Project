@@ -27,7 +27,7 @@ def get_trainee_data() -> dict:
 
 def save_json_to_file(data: list[dict]) -> None:
     """Save quiz data to local json file"""
-    with open('quiz_data.json', 'w', encoding='utf-8') as f:
+    with open('trainee_data/quiz_data.json', 'w', encoding='utf-8') as f:
         json.dump(data, f)
 
 
@@ -81,5 +81,5 @@ if __name__ == "__main__":
     trainee_data = get_trainee_data()
     wrong_answers_list = get_wrong_answers(trainee_data)
     save_json_to_file(wrong_answers_list)
-    LOCAL_PATH = "anki_cards.txt"
+    LOCAL_PATH = "trainee_data/anki_cards.txt"
     wrong_answers_to_txt(LOCAL_PATH, wrong_answers_list)
