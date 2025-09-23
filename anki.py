@@ -10,7 +10,7 @@ load_dotenv()
 
 
 def get_trainee_data() -> dict:
-    """Get data for Muarij from Airtable API"""
+    """Get data for Trainee from Airtable API"""
 
     token = os.getenv("token")
     headers = {"Authorization": f"Bearer {token}"}
