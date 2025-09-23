@@ -35,6 +35,8 @@ As mentioned above, the PAT required for the script to work is not in the repo. 
   <li>Run the anki.py script</li> 
 </ol> 
 
+Note, the line in step 3 <strong>should not have any spaces!</strong>
+
 Following these steps should create an _anki_cards.txt_ file in a folder called _/trainee_data_ located in the same folder made in step 1. 
 
 With this _.txt_ file, move onto the next part - making the cards.
