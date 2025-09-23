@@ -15,7 +15,7 @@ Note, this does **not** teach you how to use Anki. For more information on that,
 <h2>How does it work?</h2>
 The script works by pulling data from the Airtable API regarding questions you have gotten wrong in the Mastery Quizzes. It uses a PAT to access the Airtable data.
 
-**For security reasons, this token is not uploaded to the repo. Please speak to your tech coaches in your careers channel for assistance with this.**
+<br> **For security reasons, this token is not uploaded to the repo. Please speak to your tech coaches in your careers channel for assistance with this.** </br>
 
 <h2>Usage</h2>
 <ol>
@@ -25,14 +25,30 @@ The script works by pulling data from the Airtable API regarding questions you h
 
 <h2>Using the script</h2>
 
-As mentioned above, the PAT required for the script to work is not in the repo. Please ask in your **#careers** channels for the PAT and for further assistance.
+As mentioned above, the PAT required for the script to work is not in the repo. Please ask in your **#careers** channels for the PAT and for further assistance. When you have your PAT, you need to tell the script how to use it. Here's how...
 
-When that is complete, running the file with python3 will create an _anki_cards.txt_ file in a folder called _/trainee_data_ located in the same folder the script was ran from. With this _.txt_ file, move onto Step 2 - making the cards.
+<ol>
+  <li>Open the anki.py folder</li>
+  <li>Replace the <em>token = os.getenv("token")</em> with <em>token = {YOUR TOKEN STRING}</em> .</li>
+  <li>Get rid of the _load_dotenv()_ line and the import - you don't need that (I do, because I am the one publishing this repo).</li>
+  <li>Run the file script</li> 
+</ol> 
+
+In step 2, please <strong>remember to cast your PAT as a string</strong>
+
+Following these steps should create an _anki_cards.txt_ file in a folder called _/trainee_data_ located in the same folder the script was ran from. With this _.txt_ file, move onto step 2 - making the cards.
 
 <h2>Making flashcards in Anki</h2>
 
-Once you have the _anki_cards.txt_ file, navigate to Anki. Go to File>Import then select the _anki_cards.txt_ file. You should be prompted with a pop-up. In the top-right, please select the **Import** button.
-
+Once you have the <em>anki_cards.txt</em> file, you need to tell Anki to make flashcards with them.
+<ol>
+  <li>Open up Anki</li>
+  <li>Select the profile you want to add the cards to</li>
+  <li>Go to File>Import</li>
+  <li>Select the <em>anki_cards.txt</em> file</li>
+  <li>In the top-right, select the 'Import' button.</li>
+</ol>
+  
 <h2>That's it!</h2>
 
 The flash cards have now been added to your Anki profile. Have fun!
