@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-def get_muarij_data() -> dict:
+def get_trainee_data() -> dict:
     """Get data for Muarij from Airtable API"""
 
     token = os.getenv("token")
@@ -78,10 +78,8 @@ def wrong_answers_to_txt(path: str, wrong_answers: list[dict]) -> None:
 
 
 if __name__ == "__main__":
-    muarij_data = get_muarij_data()
-    wrong_answers_list = get_wrong_answers(muarij_data)
+    trainee_data = get_trainee_data()
+    wrong_answers_list = get_wrong_answers(trainee_data)
     save_json_to_file(wrong_answers_list)
     LOCAL_PATH = "anki_cards.txt"
-    DOCUMENT_PATH = "/Users/muarijmuarij/Documents/anki_cards.txt"
     wrong_answers_to_txt(LOCAL_PATH, wrong_answers_list)
-    wrong_answers_to_txt(DOCUMENT_PATH, wrong_answers_list)
