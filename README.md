@@ -29,15 +29,15 @@ The script works by pulling data from the Airtable API regarding questions you h
 As mentioned above, the PAT required for the script to work is not in the repo. Please ask in your **#careers** channels for the PAT and for further assistance. When you have your PAT, you need to tell the script how to use it. Here's how...
 
 <ol>
-  <li>Open the anki.py file</li>
-  <li>Replace the line <em>token = os.getenv("token")</em> with <em>token = {YOUR TOKEN STRING}</em> .</li>
-  <li>Get rid of the _load_dotenv()_ line and the import - you don't need that (I do, because I am the one publishing this repo).</li>
-  <li>Run the file script</li> 
+  <li>Create a folder to store the anki.py file and its outputs</li>
+  <li>In this same folder, create a .env file</li>
+  <li>In this .env file, insert the following: token={your token here}</li>
+  <li>Run the anki.py script</li> 
 </ol> 
 
-In step 2, please <strong>remember to cast your PAT as a string</strong>
+Following these steps should create an _anki_cards.txt_ file in a folder called _/trainee_data_ located in the same folder made in step 1. 
 
-Following these steps should create an _anki_cards.txt_ file in a folder called _/trainee_data_ located in the same folder the script was ran from. With this _.txt_ file, move onto step 2 - making the cards.
+With this _.txt_ file, move onto the next part - making the cards.
 
 <h2>Making flashcards in Anki</h2>
 
@@ -54,4 +54,4 @@ Once you have the <em>anki_cards.txt</em> file, you need to tell Anki to make fl
 
 The flash cards have now been added to your Anki profile. Have fun!
 <br></br>
-<h3>(This script is not perfect, if you find any bugs do let me know and I will try my best to fix them!)</h3>
+<h3>(Bugs are welcome! If you find any, let me know and I will try to fix them.)</h3>
