@@ -8,10 +8,11 @@ Have you ever thought to yourself "There has to be a better way?".
 
 <h3>Then look no further!</h3>
 
-This repo contains a script that helps automatically generate Anki flashcards for questions that you have gotten wrong in the Mastery Quizzes. It support html tags as well, so questions containing code are also nice and readable!
+This repo contains a script that helps automatically generate Anki flashcards for questions that you have gotten wrong in the Mastery Quizzes. It support html tags as well, so questions containing code are also nice and readable! 
 
-Note, this does **not** teach you how to use Anki. For more information on that, please consult your nearest YouTube tutorial.
+Unforunately, this script only makes basic flashcards for now, so no cloze or image occlusion
 
+Note, this does **not** teach you how to use Anki. For more information on that, please see <a href="https://www.youtube.com/watch?v=WmPx333n5UQ">this</a> YouTube tutorial.
 <h2>How does it work?</h2>
 The script works by pulling data from the Airtable API regarding questions you have gotten wrong in the Mastery Quizzes. It uses a PAT to access the Airtable data.
 
