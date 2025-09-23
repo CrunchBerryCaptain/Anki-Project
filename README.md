@@ -29,7 +29,7 @@ The script works by pulling data from the Airtable API regarding questions you h
 As mentioned above, the PAT required for the script to work is not in the repo. Please ask in your **#careers** channels for the PAT and for further assistance. When you have your PAT, you need to tell the script how to use it. Here's how...
 
 <ol>
-  <li>Open the anki.py folder</li>
+  <li>Open the anki.py file</li>
   <li>Replace the <em>token = os.getenv("token")</em> with <em>token = {YOUR TOKEN STRING}</em> .</li>
   <li>Get rid of the _load_dotenv()_ line and the import - you don't need that (I do, because I am the one publishing this repo).</li>
   <li>Run the file script</li> 
