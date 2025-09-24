@@ -54,6 +54,6 @@ Once you have the <em>anki_cards.txt</em> file, you need to tell Anki to make fl
   
 <h2>That's it!</h2>
 
-The flash cards have now been added to your Anki profile. Have fun!
+The flash cards have now been added to your Anki profile. Happy revising!
 <br></br>
 <h3>(Bugs are welcome! If you find any, let me know and I will try to fix them.)</h3>
