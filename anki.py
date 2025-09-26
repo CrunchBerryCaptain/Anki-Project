@@ -78,8 +78,14 @@ def wrong_answers_to_txt(path: str, wrong_answers: list[dict]) -> None:
 
 
 if __name__ == "__main__":
+    # create folder for users
+    LOCAL_PATH = "trainee_data/"
+    if not os.path.exists(LOCAL_PATH):
+        os.makedirs(LOCAL_PATH)
+
     trainee_data = get_trainee_data()
     wrong_answers_list = get_wrong_answers(trainee_data)
     save_json_to_file(wrong_answers_list)
-    LOCAL_PATH = "trainee_data/anki_cards.txt"
-    wrong_answers_to_txt(LOCAL_PATH, wrong_answers_list)
+
+    FILENAME = "anki_cards.txt"
+    wrong_answers_to_txt(f'{LOCAL_PATH}{FILENAME}', wrong_answers_list)
