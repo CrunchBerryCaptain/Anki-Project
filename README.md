@@ -30,6 +30,8 @@ As mentioned above, the PAT required for the script to work is not in the repo. 
 
 <ol>
   <li>Create a folder to store the anki.py file and its outputs</li>
+  <li>Create a <a href="https://docs.python.org/3/library/venv.html">.venv</a></li>
+  <li>Install dependencies with "<em>pip3 install -r requirements.txt</em>" into your venv</li>
   <li>In this same folder, create a .env file</li>
   <li>In this .env file, insert the following: token={your token here}</li>
   <li>Run the anki.py script</li> 
